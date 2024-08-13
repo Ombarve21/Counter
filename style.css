@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #4caf50;
+    background-color: white;
+    color: #4caf50;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #388e3c;
+}
+
+
+.progress-container {
+    width: 50%;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 50%; /* Start with 50% as the initial value is 75 */
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out; /* This adds the smooth transition */
+}
+
+@media (max-width: 600px) {
+    .progress-container {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
